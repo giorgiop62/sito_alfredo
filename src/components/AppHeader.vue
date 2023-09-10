@@ -12,9 +12,9 @@ export default {
                     <li>
                         <h1>Alfredo Pumilia</h1>
                     </li>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <li><a href="#">PROJETS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="/accueil">ACCUEIL</a></li>
+                    <li><a href="/projets">PROJETS</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </div>
 
