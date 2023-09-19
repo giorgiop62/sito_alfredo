@@ -8,13 +8,14 @@ export default {
     <header>
         <div class="left">
             <div class="list">
+
                 <ul>
-                    <li>
-                        <h1>Alfredo Pumilia</h1>
-                    </li>
-                    <li><a href="/accueil">ACCUEIL</a></li>
-                    <li><a href="/projets">PROJETS</a></li>
-                    <li><a href="/contact">CONTACT</a></li>
+                    <h1>Alfredo Pumilia</h1>
+
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/projets">Discografia</a></li>
+                    <li><a href="/Date">Date</a></li>
+                    <li><a href="/contact">Contatti</a></li>
                 </ul>
             </div>
 
@@ -22,25 +23,28 @@ export default {
         <div class="right">
             <ul>
                 <li><a href="https://www.facebook.com/alfredo.pumilia?locale=it_IT%2F"><i
-                            class="fa-brands fa-facebook-f fa-bounce"></i></a></li>
-                <li><a href="https://www.instagram.com/alfredo_pumilia/"><i
-                            class="fa-brands fa-instagram fa-bounce"></i></a></li>
-                <li><a href="https://www.youtube.com/watch?v=9jPcHhuZQ8Q"><i class="fa-brands fa-youtube fa-bounce"></i></a>
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="https://www.instagram.com/alfredo_pumilia/"><i class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=9jPcHhuZQ8Q"><i class="fa-brands fa-youtube "></i></a>
                 </li>
                 <li><a href="https://open.spotify.com/user/1174504297?si=f2b72c67d1d54f02"><i
-                            class="fa-brands fa-spotify fa-bounce"></i></a></li>
+                            class="fa-brands fa-spotify "></i></a></li>
             </ul>
 
         </div>
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
     display: flex;
     list-style-type: none;
     align-items: center;
     margin-right: 100px;
+}
+
+h1 {
+    color: black
 }
 
 li {
@@ -91,6 +95,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
+@media only screen and (max-width: 600px) {}
 </style>

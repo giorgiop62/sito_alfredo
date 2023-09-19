@@ -14,14 +14,13 @@ export default {
         <div class="icone">
             <ul>
                 <li><a href="https://www.facebook.com/alfredo.pumilia?locale=it_IT%2F"><i
-                            class="fa-brands fa-facebook-f fa-bounce"></i></a></li>
-                <li><a href="https://www.instagram.com/alfredo_pumilia/"><i
-                            class="fa-brands fa-instagram fa-bounce"></i></a>
+                            class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="https://www.instagram.com/alfredo_pumilia/"><i class="fa-brands fa-instagram "></i></a>
                 </li>
-                <li><a href="https://www.youtube.com/watch?v=9jPcHhuZQ8Q"><i class="fa-brands fa-youtube fa-bounce"></i></a>
+                <li><a href="https://www.youtube.com/watch?v=9jPcHhuZQ8Q"><i class="fa-brands fa-youtube "></i></a>
                 </li>
                 <li><a href="https://open.spotify.com/user/1174504297?si=f2b72c67d1d54f02"><i
-                            class="fa-brands fa-spotify fa-bounce"></i></a></li>
+                            class="fa-brands fa-spotify "></i></a></li>
             </ul>
 
         </div>

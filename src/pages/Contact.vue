@@ -6,14 +6,14 @@ export default {
 
 <template>
     <div class="contact">
-        <h1>Contacts</h1>
+        <h1>Contatti</h1>
         <div class="list">
             <i class="fa-solid fa-location-dot"></i>
-            <address>Napoli,sanità</address>
+            <address>Napoli</address>
             <i class="fa-sharp fa-solid fa-phone" style="color: #dee0e3;"></i>
-            <p>Numero:3505255178</p>
+            <p>Numero: +39 3929220639</p>
             <i class="fa-solid fa-envelope"></i>
-            <p>email: andrea@gmail.com</p>
+            <p>email: alfredopumilia@gmail.com</p>
 
 
         </div>
@@ -47,5 +47,15 @@ h1 {
 
 address {
     margin-top: 20px;
+}
+
+//resposive
+@media only screen and (max-width: 600px) {
+    .list {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    ;
 }
 </style>
