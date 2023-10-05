@@ -6,18 +6,19 @@ export default {
 
 <template>
     <div class="container">
-        <h1>DATE</h1>
+        <h1>Date</h1>
         <div class="list-date">
             <ul>
-                <li>22/05/2009</li>
-                <li>22/05/2009</li>
-                <li>22/05/2009</li>
-                <li>22/05/2009</li>
-                <li>22/05/2009</li>
+                <li>1/10/2022</li>
+                <li>1/10/2022</li>
+                <li>1/10/2022</li>
+                <li>1/10/2022</li>
+                <li>1/10/2022</li>
+                <li>1/10/2022</li>
 
             </ul>
-        </div>
 
+        </div>
     </div>
 </template>
 
@@ -28,18 +29,15 @@ export default {
     background-image: url("../assets/notte-20.JPG");
     background-size: cover;
     color: white;
+    background-repeat: no-repeat;
 }
 
 h1 {
-    margin-left: 60px;
-}
-
-ul {
-    font-size: 20px;
-    margin: 20px;
+    text-align: center;
 }
 
 li {
-    margin: 20px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 </style>

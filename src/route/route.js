@@ -6,10 +6,15 @@ import Date from "../pages/Date.vue"
 
 const routes = [
   {
+    path: '',
+    redirect: 'home',
+  },
+  {
     path: "/home",
     name: "home",
     component: Home,
   },
+  
   {
     path: "/projets",
     name: "projets",
@@ -24,10 +29,9 @@ const routes = [
     path: "/date",
     name: "date",
     component: Date,
-  },
-
-
+  }
 ];
-const router = createRouter({ history: createWebHistory(), routes });
 
+const router = createRouter({ history: createWebHistory(), routes });
+router.replace(router.currentRoute.value.fullPath);
 export default router;

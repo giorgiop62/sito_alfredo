@@ -12,10 +12,10 @@ export default {
                 <ul>
                     <h1>Alfredo Pumilia</h1>
 
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/projets">Discografia</a></li>
-                    <li><a href="/Date">Date</a></li>
-                    <li><a href="/contact">Contatti</a></li>
+                    <li><router-link to="/home" tag="button">Home</router-link></li>
+                    <li><router-link to="/projets" tag="button">Discografia</router-link></li>
+                    <li><router-link to="/date" tag="button">Date</router-link></li>
+                    <li><router-link to="/contact" tag="button">Contatti</router-link></li>
                 </ul>
             </div>
 

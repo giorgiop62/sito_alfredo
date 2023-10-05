@@ -31,8 +31,7 @@ export default {
 <style lang="scss" scoped>
 .jumbotron {
     text-align: center;
-    width: 80%;
-    margin: 40px auto;
+    width: 100%;
 }
 
 .text {
@@ -44,6 +43,7 @@ export default {
 
 img {
     width: 100%;
+
 }
 
 .araputo {
