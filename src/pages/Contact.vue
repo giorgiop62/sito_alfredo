@@ -5,56 +5,46 @@ export default {
 </script>
 
 <template>
-    <div class="contact">
-        <h1>Contatti</h1>
-        <div class="list">
-            <i class="fa-solid fa-location-dot"></i>
-            <address>Napoli</address>
-            <i class="fa-sharp fa-solid fa-phone" style="color: #dee0e3;"></i>
-            <p>Numero: +39 3929220639</p>
-            <i class="fa-solid fa-envelope"></i>
-            <p>email: alfredopumilia@gmail.com</p>
+    <div class="container-1">
+        <ul class="list-contacts">
+            <li class="media-4">
+                <i class="fa-solid fa-phone m-3"></i>
+                <div class="media-body text-center">
+                    <p> +39 392 922 0639</p>
+                </div>
+            </li>
 
+            <li class="media-4">
+                <i class="fas fa-envelope m-3"></i>
+                <div class="media-body text-center">
+                    <a href="mailto:alfredo@gmail.com">alfredopumilia@gmail.com</a>
+                </div>
+            </li>
 
-        </div>
+            <li class="media-4">
+                <i class="fa-solid fa-location-dot m-3"></i>
+                <div class="media-body text-center">
+                    <address>Napoli</address>
+                </div>
+            </li>
+        </ul>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.contact {
-    background-image: url(../assets/notte.jpg);
-    height: 100vh;
+.container-1 {
+    background-image: url('../assets/notte.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     color: white;
-}
-
-h1 {
-    text-align: center;
-}
-
-.list {
-    width: 500px;
-    height: 300px;
-    text-align: center;
-    margin: 0 auto;
     font-size: 23px;
+    text-align: center;
 }
 
-.fa-solid {
-    margin-top: 50px;
-}
-
-address {
-    margin-top: 20px;
-}
-
-//resposive
-@media only screen and (max-width: 600px) {
-    .list {
-        width: 100%;
-        margin: 0 auto
-    }
-
-    ;
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>

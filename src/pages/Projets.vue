@@ -5,21 +5,24 @@ export default {
 </script>
 
 <template>
-    <div class="discografia">
+    <div class="bg-img">
         <h1>Discografia</h1>
-        <div class="box">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../assets/album1.png" alt="album 1">
-                <div class="card-body">
-                    <h5 class="card-title">Majacosajusta</h5>
-                    <p class="card-text">2021</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 container-alt">
+                    <div class="container-alt-1">
+                        <img src="../assets/album1.png" alt="Majacosajusta">
+                        <h4>Majacosajusta</h4>
+                        <data value="">2021</data>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../assets/album2.png" alt="album 1">
-                <div class="card-body">
-                    <h5 class="card-title">Hydruntum</h5>
-                    <p class="card-text">2016</p>
+                <div class="col-md-6 container-alt">
+                    <div class="container-alt-2">
+                        <img src="../assets/album2.png" alt="Hydruntum">
+                        <h4>Hydruntum</h4>
+                        <data value="">2016</data>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,27 +30,34 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.discografia {
+.bg-img {
     background-image: url('../assets/bianco.JPG');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    background-size: contain;
-    color: white;
 }
 
 h1 {
+    color: white;
     text-align: center;
 }
 
-.box {
-    display: flex;
-    justify-content: center;
-    height: 600px;
-    align-items: center;
+h4,
+data {
+    color: white;
 }
 
-p,
-h5 {
-    font-size: 18px;
+.container-alt-1 {
+    height: auto;
+}
+
+.container-alt-2 {
+    height: auto;
+}
+
+.container-alt {
+    padding: 20px;
+    text-align: center;
 }
 </style>

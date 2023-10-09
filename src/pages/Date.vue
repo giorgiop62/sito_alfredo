@@ -5,39 +5,51 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="bg-img">
         <h1>Date</h1>
-        <div class="list-date">
-            <ul>
-                <li>1/10/2022</li>
-                <li>1/10/2022</li>
-                <li>1/10/2022</li>
-                <li>1/10/2022</li>
-                <li>1/10/2022</li>
-                <li>1/10/2022</li>
-
-            </ul>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 container-alt">
+                    <div class="container-alt-1">
+                        <ul>
+                            <div class="date">
+                                <li>1/20/05</li>
+                                <address> <i class="fa-solid fa-location-dot"></i> Napoli</address>
+                            </div>
+                            <div class="date">
+                                <li>1/20/05</li>
+                                <address> <i class="fa-solid fa-location-dot"></i> Milano</address>
+                            </div>
+                            <div class="date">
+                                <li>1/20/05</li>
+                                <address> <i class="fa-solid fa-location-dot"></i> Amalfi</address>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.container {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../assets/notte-20.JPG");
+.bg-img {
+    background-image: url('../assets/notte-20.JPG');
     background-size: cover;
-    color: white;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
-li {
+.date {}
+
+.container-alt-1 {
+    color: white;
     font-size: 20px;
-    margin-top: 10px;
 }
 </style>
