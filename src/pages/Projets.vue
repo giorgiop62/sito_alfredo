@@ -9,17 +9,19 @@ export default {
         <h1>Discografia</h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 container-alt">
+                <div class="col-md-12 container-alt">
                     <div class="container-alt-1">
                         <img src="../assets/album1.png" alt="Majacosajusta">
                         <h4>Majacosajusta</h4>
                         <data value="">2021</data>
                     </div>
                 </div>
-                <div class="col-md-6 container-alt">
+                <div class="col-md-12 container-alt">
                     <div class="container-alt-2">
                         <img src="../assets/album2.png" alt="Hydruntum">
-                        <h4>Hydruntum</h4>
+                        <h4>
+                            Hydruntum
+                        </h4>
                         <data value="">2016</data>
 
                     </div>
