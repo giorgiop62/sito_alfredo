@@ -5,61 +5,41 @@ export default {
 </script>
 
 <template>
-    <div class="bg-img">
-        <h1>Discografia</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 container-alt">
-                    <div class="container-alt-1">
-                        <img src="../assets/album1.png" alt="Majacosajusta">
-                        <h4>Majacosajusta</h4>
-                        <data value="">2021</data>
-                    </div>
+    <div class="container-fluid">
+        <h1 class="text-center p-3">Discografia</h1>
+        <div class="box-disco p-5 d-flex">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/album1.png" class="card-img-top" alt="Majacosajusta">
+                <div class="card-body">
+                    <h5 class="card-title">Majacosajusta</h5>
+                    <p class="card-text">Anno: 2021</p>
+                    <a href="https://open.spotify.com/intl-it/artist/2gQaHes6Px7wbNHmp5H4KM?si=JUmw4bKBTfO2NIkFu7KcRw"
+                        class="btn btn-dark">Ascolta su Spotify</a>
                 </div>
-                <div class="col-md-12 container-alt">
-                    <div class="container-alt-2">
-                        <img src="../assets/album2.png" alt="Hydruntum">
-                        <h4>
-                            Hydruntum
-                        </h4>
-                        <data value="">2016</data>
-
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/album2.png" class="card-img-top" alt="Hydruntum">
+                <div class="card-body">
+                    <h5 class="card-title">Hydruntum</h5>
+                    <p class="card-text">Anno: 2016</p>
+                    <a href="https://open.spotify.com/intl-it/album/4DuDbk2Kx5xfflF2nqrxCI?si=hFhDb4HDQdOxGftlyS-h7A"
+                        class="btn btn-dark">Ascolta su Spotify</a>
                 </div>
             </div>
         </div>
+
+
     </div>
 </template>
 
 <style lang="scss" scoped>
-.bg-img {
-    background-image: url('../assets/bianco.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.container-fluid {
+    background-color: black;
+    color: white;
     height: 100vh;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
-
-h4,
-data {
-    color: white;
-}
-
-.container-alt-1 {
-    height: auto;
-}
-
-.container-alt-2 {
-    height: auto;
-}
-
-.container-alt {
-    padding: 20px;
-    text-align: center;
+.box-disco {
+    justify-content: space-around;
 }
 </style>

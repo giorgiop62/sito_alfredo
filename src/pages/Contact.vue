@@ -5,46 +5,56 @@ export default {
 </script>
 
 <template>
-    <div class="container-1">
-        <ul class="list-contacts">
-            <li class="media-4">
-                <i class="fa-solid fa-phone m-3"></i>
-                <div class="media-body text-center">
-                    <p> +39 392 922 0639</p>
-                </div>
-            </li>
-
-            <li class="media-4">
-                <i class="fas fa-envelope m-3"></i>
-                <div class="media-body text-center">
-                    <a href="mailto:alfredo@gmail.com">alfredopumilia@gmail.com</a>
-                </div>
-            </li>
-
-            <li class="media-4">
-                <i class="fa-solid fa-location-dot m-3"></i>
-                <div class="media-body text-center">
-                    <address>Napoli</address>
-                </div>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        <h1 class="text-center p-3">Contatti</h1>
+        <div class="left-box d-flex">
+            <img src="../assets/06_Alfredo e Vincenzo.jpg" alt="Alfredo Pumilia">
+            <div class="contatti">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>Napoli</li>
+                    <li><i class="fa-solid fa-phone"></i>3505255178</li>
+                    <li><i class="fa-solid fa-envelope"></i>Alfredopumilia@gmail.com</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.container-1 {
-    background-image: url('../assets/notte.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+.container-fluid {
+    background-color: black;
     color: white;
-    font-size: 23px;
-    text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+img {
+    width: 700px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
+}
+
+.left-box {
+    padding: 20px;
+}
+
+.contatti {
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 40px;
+}
+
+i {
+    margin-right: 30px;
 }
 </style>

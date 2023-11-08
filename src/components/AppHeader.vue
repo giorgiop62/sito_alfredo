@@ -5,15 +5,16 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <router-link class="navbar-brand" to="/home" tag="button">Alfredo Pumilia</router-link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-music"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <router-link class="nav-link" to="/home" tag="button">Home</router-link>
 
@@ -32,7 +33,7 @@ export default {
                     </li>
                 </ul>
 
-                <span class="navbar-text d-none d-sm-block ">
+                <span class="navbar-text d-none d-sm-block">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.facebook.com/alfredo.pumilia?locale=it_IT%2F"><i
@@ -60,6 +61,7 @@ export default {
 <style lang="scss" scoped>
 a {
     margin-left: 20px;
+    color: white;
 }
 
 .navbar-brand {

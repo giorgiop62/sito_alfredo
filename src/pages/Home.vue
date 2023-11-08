@@ -5,84 +5,110 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div class="container-fluid">
+        <h1 class="text-center">Il violino – il più umano di tutti gli strumenti…</h1>
+        <p class="text-center">(Louisa May Alcott)</p>
+        <div class="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/grupppo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/Pumiliani-49.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/Pumiliani-33.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/notte.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/alfviolin.JPG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/05_Araputi.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item change">
-                    <img src="../assets/Araputo-Zen-01.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item change">
-                    <img src="../assets/compagnia.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
         <div class="description">
-            <p>Musicista e compositore napoletano, classe 1990, inizia ad approcciare alla musica all’età di 11 anni
+            <p class="p-3"> Musicista e compositore napoletano, classe 1990, inizia ad approcciare alla musica
+                all’età di 11 anni
                 studiando il flauto traverso, successivamente inizia lo studio della chitarra, approfondendola nel jazz per
                 poi diplomarsi al conservatorio di Napoli S. Pietro a Majella in violino classico, sotto la guida del M°
                 Antonio Colica.
-
                 Il primo approccio al violino è avvenuto grazie all’incontro con il rumeno Illie Pipica, che lo ha spinto ad
                 incuriosirsi ed appassionarsi ai vari linguaggi dell’est Europa, mantenendo sempre vivo lo studio della
                 musica classica.
-
                 Durante i suoi studi classici continua a dedicarsi lo studio del jazz, frequentando la MAD SCHOOL e girando
                 l’Europa seguendo diversi stage per violino jazz, primo fra tutti lo stage con il violinista Didier Lockwood
-                al CMDL (Centre des musiques Didier Lockwood).
-                <hr>
-
-
-                -Nel 2016 con gli Araputo zen pubblicano il loro primo disco “Hydruntum”
-                -Nel 2021 sempre con Araputo zen esce il secondo Album “Majacosajusta”
-
-                Attualmente sta Lavorando al suo disco “Miradöis”.
-
-                BAND:
-                Araputo Zen
-                Zygrya sting trio
-            </p>
-            <div class="trio text-center">
-                <img src="../assets/images.jpg" alt="">
-            </div>
+                al CMDL (Centre des musiques Didier Lockwood).<br>
+                -Nel 2016 con gli Araputo zen pubblicano il loro primo disco “Hydruntum” <br>
+                -Nel 2021 sempre con Araputo zen esce il secondo Album “Majacosajusta” <br>
+                Attualmente sta Lavorando al suo disco “Miradöis”. <br>
+                BAND: <span>Araputo Zen</span> <br>
+                Zygrya sting trio</p>
         </div>
+        <div class="sub-img">
+            <img class="gruppo" src="../assets/10_Araputi B&W.jpg" alt="Araputo Zen">
+        </div>
+
     </div>
 </template>
 
 <style lang="scss" scoped>
-.container {
-    width: 80%;
+.container-fluid {
+    background-color: black;
+    color: white;
+
 }
 
 p {
-    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+    font-weight: bold;
+    color: burlywood;
+}
+
+h1 {
+    padding-top: 20px;
 }
 
 img {
-    height: 50%;
+    width: 700px;
+    height: 450px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
 }
 
-.trio {
-    margin-bottom: 20px;
+.carousel {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.gruppo {
+    width: 670px;
+    height: auto;
+}
+
+.sub-img {
+    text-align: center;
+    padding: 20px;
 }
 </style>
