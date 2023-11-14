@@ -7,8 +7,10 @@ export default {
 <template>
     <div class="container-fluid">
         <h1 class="text-center p-3">Discografia</h1>
-        <div class="box-disco p-5 d-flex">
-            <div class="card" style="width: 18rem;">
+        <div class="box-disco p-5 d-flex flex-wrap justify-content-around">
+            <!-- Aggiunto flex-wrap e justify-content-center -->
+            <div class="card" style="width: 18rem; margin-bottom: 20px;">
+                <!-- Aggiunto margin-bottom per la distanza tra le cards -->
                 <img src="../assets/album1.png" class="card-img-top" alt="Majacosajusta">
                 <div class="card-body">
                     <h5 class="card-title">Majacosajusta</h5>
@@ -17,7 +19,8 @@ export default {
                         class="btn btn-dark">Ascolta su Spotify</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; margin-bottom: 20px;">
+                <!-- Aggiunto margin-bottom per la distanza tra le cards -->
                 <img src="../assets/album2.png" class="card-img-top" alt="Hydruntum">
                 <div class="card-body">
                     <h5 class="card-title">Hydruntum</h5>
@@ -27,8 +30,6 @@ export default {
                 </div>
             </div>
         </div>
-
-
     </div>
 </template>
 
@@ -37,9 +38,27 @@ export default {
     background-color: black;
     color: white;
     height: 100vh;
+    justify-content: space-between;
 }
 
-.box-disco {
-    justify-content: space-around;
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Regola per la visualizzazione mobile (max-width: 600px) */
+    .box-disco {
+        flex-direction: column;
+        align-items: center;
+        /* Centra le cards verticalmente */
+    }
+
+    .container-fluid {
+        height: 100%;
+    }
+
+    .card {
+        width: 80%;
+        /* Larghezza delle cards al 80% della larghezza disponibile */
+    }
 }
 </style>

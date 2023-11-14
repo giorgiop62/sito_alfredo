@@ -16,7 +16,7 @@ export default {
 footer {
     justify-content: space-between;
     align-items: center;
-    padding: 0 23px
+    padding: 0 23px;
 }
 
 
