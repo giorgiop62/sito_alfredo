@@ -68,4 +68,10 @@ a {
     font-size: 25px;
     font-style: oblique;
 }
+
+@media (max-width: 1000px) {
+    .navbar-text .navbar-nav {
+        display: none;
+    }
+}
 </style>
