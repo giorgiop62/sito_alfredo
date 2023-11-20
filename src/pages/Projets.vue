@@ -21,6 +21,26 @@ export default {
             </div>
             <div class="card" style="width: 18rem; margin-bottom: 20px;">
                 <!-- Aggiunto margin-bottom per la distanza tra le cards -->
+                <img src="../assets/album4.png" class="card-img-top" alt="Hydruntum">
+                <div class="card-body">
+                    <h5 class="card-title">Hubrys</h5>
+                    <p class="card-text">Anno: 2019</p>
+                    <a href="https://open.spotify.com/intl-it/track/4YXALdq9vRBR5dxeWSYiAt?si=14f17a0cc2474db5"
+                        class="btn btn-dark">Ascolta su Spotify</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px;">
+                <!-- Aggiunto margin-bottom per la distanza tra le cards -->
+                <img src="../assets/album3.jpeg" class="card-img-top" alt="Hydruntum">
+                <div class="card-body">
+                    <h5 class="card-title">Flamenco Napuleño</h5>
+                    <p class="card-text">Anno: 2017</p>
+                    <a href="https://open.spotify.com/intl-it/artist/1skEFR5AL075fwcM0AopGU?si=UTmm3DqSSUWYkimdC6jOgA"
+                        class="btn btn-dark">Ascolta su Spotify</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-bottom: 20px;">
+                <!-- Aggiunto margin-bottom per la distanza tra le cards -->
                 <img src="../assets/album2.png" class="card-img-top" alt="Hydruntum">
                 <div class="card-body">
                     <h5 class="card-title">Hydruntum</h5>
@@ -37,8 +57,8 @@ export default {
 .container-fluid {
     background-color: black;
     color: white;
-    height: 100vh;
     justify-content: space-between;
+    height: 100vh;
 }
 
 
